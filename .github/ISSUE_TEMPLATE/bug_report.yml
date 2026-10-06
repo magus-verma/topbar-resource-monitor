@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible widget, warning or installation problem
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Release or commit
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Desktop environment
+      description: Distribution/version, desktop/GNOME version, Wayland or X11, architecture, Python version, enabled tray host.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and expected result
+      description: What did you do, what happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshot
+      description: Use journalctl --user -u topbar-resource-monitor.service -n 50 --no-pager. Remove unrelated private content from logs/screenshots.
+      render: text

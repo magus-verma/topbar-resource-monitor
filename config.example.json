@@ -1,0 +1,7 @@
+{
+  "warning_percent": 80,
+  "critical_percent": 95,
+  "sustain_seconds": 10,
+  "repeat_seconds": 300,
+  "poll_seconds": 2
+}
